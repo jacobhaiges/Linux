@@ -8,6 +8,10 @@ This tutorial uses [VirtualBox](https://www.virtualbox.org/wiki/Downloads) to pr
 
 This tutorial uses [Vagrant](https://www.vagrantup.com/downloads.html), which builds and maintains virtual enviroments, to quickly deploy virtual machines so you can experiment without fear of messing anything up.
 
+# SSH Client
+
+You will need an SSH client to connect to the VM's. Windows doesn't come with one by default as Mac/Linux does, so you will need to install one. I recommend installing [Git](https://git-scm.com/download/win) as it comes with an SSH client.
+
 # Basic Linux Knowledge 
 
 This tutorial assumes you have basic knowledge of Linux. Here are some excellent learning resources for Linux:
