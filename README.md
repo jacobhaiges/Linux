@@ -1,9 +1,12 @@
 # Linux
 Learning Linux
 
-The goal is to learn Linux command line / shell scripting. First, I am going to create a virtual machine using a Vagrant box of a Centos7 image:![](images/vagrantConfig.png)
+The goal is this project is to gain some experience with the Linux command line and shell scripting.
 
-Next, lets test the VM connection with a ping: ![](images/vmPing.png)
+# Target Audience
+The target audience for this tutorial is someone who has basic Linux CLI experience.
 
-Testing 2 VM's connectivity to each other: ![](images/twoVMconf.png)
-![](images/2vmPing.png)
+# Labs
+
+* [Prerequisites](docs/01-prerequisites.md)
+* [Setting up Vagrant VM](docs/02-setup.md)
