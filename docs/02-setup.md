@@ -48,7 +48,7 @@ To connect to the virtual machine, use the vagrant command
 ```
 vagrant ssh
 ```
-After running 'vagrant ssh', the prompt should switch to a prompt like this: ![](images/vagrantcmdLine.png)
+After running 'vagrant ssh', the prompt should switch to a prompt like this: ![](../images/vagrantcmdLine.png)
 
 Let's make some config changes, use
 ```
@@ -161,5 +161,5 @@ Upon changing the IP address configuration details I got an error the first time
 ```
 Failed to open/create the internal network 'HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter' (VERR_INTNET_FLT_IF_NOT_FOUND).
 ```
-IF you get this error, try navigating to Control Panel > Network and Internet > Network Connections,
-and disabling and reenabling the VirtualBox Host-Only Ethernet Adapter. ![](images/networkTroubleshooting.png)
+If you get this error, try navigating to Control Panel > Network and Internet > Network Connections,
+and disabling and reenabling the VirtualBox Host-Only Ethernet Adapter. ![](../images/networkTroubleshooting.png)
