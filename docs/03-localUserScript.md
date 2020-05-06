@@ -9,7 +9,6 @@ This shell script is supposed to make new user accounts based on provided input.
 * Creates a user with the input provided.
 * If the account was not successfully created, inform the user and and return an exit status of 1.
 * Display the username & password along with the host where the account was created.
----> Append the username & host to a .csv
 
 # VM Creation
 (Skip this step if you know how to setup the Vagrant VM)
