@@ -35,8 +35,8 @@ The
 >&2
 ```
 you see in the code block above is using ">" which is normally [redirecting](https://www.gnu.org/software/bash/manual/html_node/Redirections.html) the standard input, but instead, the &2 after is redirecting both standard output AND standard error.
-* Note: File Descriptor 1 = Standard Input
-        File Descriptor 2 = Standard output (there is an implicit 1 when using >, unless specified otherwise)
+* Note: File Descriptor 1 = Standard Input | 
+        File Descriptor 2 = Standard output (there is an implicit 1 when using >, unless specified otherwise) |
         File Descriptor 3 = Standard Error
 
 Checking to see if there was atleast 1 parameter supplied. If not, provide the command usage information. If there isn't any parameters given, display the message to STDERR.
