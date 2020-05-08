@@ -1,5 +1,4 @@
-# Linux
-Learning Linux
+# Shell Scripting
 
 The goal is this project is to gain some experience with the Linux command line and shell scripting, and document the steps that I took.
 
