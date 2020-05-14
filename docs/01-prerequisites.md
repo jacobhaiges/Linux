@@ -6,7 +6,7 @@ This tutorial uses [VirtualBox](https://www.virtualbox.org/wiki/Downloads) to pr
 
 # Vagrant
 
-This tutorial uses [Vagrant](https://www.vagrantup.com/downloads.html), which builds and maintains virtual enviroments, to quickly deploy virtual machines so you can experiment without fear of messing anything up.
+This tutorial uses [Vagrant](https://www.vagrantup.com/downloads.html), which builds and maintains virtual environments, to quickly deploy virtual machines so you can experiment without fear of messing anything up.
 
 # SSH Client
 
