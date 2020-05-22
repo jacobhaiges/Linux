@@ -135,8 +135,9 @@ This code block is creating an archive of the user's home directory by using the
 ```
 tar
 ```
-command. The zcf flags will create a compressed gzip archive with the format ${ARCHIVE_DIR}/${USERNAME}.tgz". [Tar examples](https://www.tecmint.com/18-tar-command-examples-in-linux/)
-[Tar man page](https://linux.die.net/man/1/tar)
+command. The zcf flags will create a compressed gzip archive with the format ${ARCHIVE_DIR}/${USERNAME}.tgz". 
+* [Tar examples](https://www.tecmint.com/18-tar-command-examples-in-linux/)
+* [Tar man page](https://linux.die.net/man/1/tar) \
 The code block for the delete user option:
 ```
 if [[ "${DELETE_USER}" = 'true' ]]
