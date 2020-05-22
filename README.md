@@ -1,5 +1,4 @@
-# Linux
-Learning Linux
+# Shell Scripting
 
 The goal is this project is to gain some experience with the Linux command line and shell scripting, and document the steps that I took.
 
@@ -12,3 +11,4 @@ The target audience for this tutorial is someone who has basic Linux CLI experie
 * [Setting up Vagrant VM](docs/02-setup.md)
 * [Creating Local Users Script](docs/03-localUserScript.md)
 * [Creating Local Users Script Version 2](docs/04-localUserScript_v2.md)
+* [Creating Local Users Script Version 3](docs/05-localUserScript_v3.md)
