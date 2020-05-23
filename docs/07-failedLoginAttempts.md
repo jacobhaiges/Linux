@@ -80,7 +80,12 @@ To clean up the output a little, the 2nd field delimited by a comma:
 ```
 GeoIP Country Edition: CN
 ```
-is going to be filtered out.
+is going to be filtered out, which results in a cleaner output:
+```
+6749,182.100.67.59,China
+3379,183.3.202.111,China
+```
+
 Finally, the command will print out the number of failed attempts, the IP address, the location, and exit with a status of 0.
 ```
 echo "${COUNT},${IP},${LOCATION}"
