@@ -7,7 +7,7 @@ This shell script displays the number of failed login attempts by IP address and
 * Produces output in [CSV](https://www.howtogeek.com/348960/what-is-a-csv-file-and-how-do-i-open-it/) format with a header of "Count,IP,Location".
 
 # Note
-* I am going to use a sample log, [syslog-sample](syslog-sample). You can use this sample log or a different log if you would like.
+* I am going to use a sample log, [syslog-sample](../syslog-sample). You can use this sample log or a different log if you would like.
 
 # Writing the Shell Script
 Starting the script:
