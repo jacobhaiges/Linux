@@ -10,11 +10,11 @@ This shell script deletes, disables, and/or archives users on the local system.
   * -r Removes the home dir associated with the account.
   * -a Creates an archive of the home dir associated with the account. Stores the archive in the
   /archives directory. (NOTE: /archives is not a default directory that exists on a Linux system. This script should create the /archive directory if it does not already exist.)
-  * Any other option isn't valid and therefore should cause the script to display a usage statement along with exiting with an exit status of 1.
-  * Accepts a list of usernames as arguments. One username is required by default, if not, the script will display a proper usage statement like you would find in a man page and return an exit status of 1. All the messages associated with this event will be displayed on standard error (STDERR).
-  * Will not disable or delete any accounts that have a UID of less than 1,000. (NOTE: This is because accounts with a UID under 1000 are typically system accounts. Careful consideration should be taken before deleting one of these accounts as it can have serious effects on the system.)
-  * Informs the user if the account was not able to be disabled, deleted, or archived.
-  * Displays the username and any actions performed against the account.
+* Any other option isn't valid and therefore should cause the script to display a usage statement along with exiting with an exit status of 1.
+* Accepts a list of usernames as arguments. One username is required by default, if not, the script will display a proper usage statement like you would find in a man page and return an exit status of 1. All the messages associated with this event will be displayed on standard error (STDERR).
+* Will not disable or delete any accounts that have a UID of less than 1,000. (NOTE: This is because accounts with a UID under 1000 are typically system accounts. Careful consideration should be taken before deleting one of these accounts as it can have serious effects on the system.)
+* Informs the user if the account was not able to be disabled, deleted, or archived.
+* Displays the username and any actions performed against the account.
 
 # Writing the Shell Script
 
