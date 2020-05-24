@@ -7,7 +7,7 @@ This shell script displays the number of failed login attempts by IP address and
 * Produces output in [CSV](https://www.howtogeek.com/348960/what-is-a-csv-file-and-how-do-i-open-it/) format with a header of "Count,IP,Location".
 
 # Note
-* I am going to use a sample log, [syslog-sample](syslog-sample). You can use this sample log or a different log if you would like.
+* I am going to use a sample log, [syslog-sample](../syslog-sample). You can use this sample log or a different log if you would like.
 
 # Writing the Shell Script
 Starting the script:
@@ -43,11 +43,29 @@ grep Failed syslog-sample | awk '{print $(NF - 3)}' | sort | uniq -c | sort -nr 
 do
 ```
 [Grep](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) is a filter that will search for patterns, and will display all of the characters that match the specified pattern. Grep is similar to [re](https://docs.python.org/3/library/re.html) in python, another way to use regular expressions.
-Because we are looking for failed login attempts, the first filter I'm searching for is "Failed". \ Every subsequent command is going to narrow our search down and make it .csv format friendly. \ The next command I'm using is [awk](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/), which is being used for pattern searching in this case. The usage of NF with awk represents the last field in a file, and the - 3 is used to say the 3rd field from the last. The reason I'm using the 3rd field from the last is because if you look at a sample line of output in the syslog-sample file:
+Because we are looking for failed login attempts, the first filter I'm searching for is "Failed". 
+
+
+Every subsequent command is going to narrow our search down and make it .csv format friendly. 
+
+
+The next command I'm using is [awk](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/), which is being used for pattern searching in this case. The usage of NF with awk represents the last field in a file, and the - 3 is used to say the 3rd field from the last. The reason I'm using the 3rd field from the last is because if you look at a sample line of output in the syslog-sample file:
 ```
 Apr 15 19:59:11 spark sshd[16898]: Failed password for root from 183.3.202.111 port 17367 ssh2
 ```
-The 3rd field from the last is an IP address, hence the (NF - 3). \ Next this information is going to be piped to the [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/) command to get the lines in order. \ The sorted information is piped to the [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/) command, with the -c flag, which is going to give a count of how many times that particular line appeared. \ The next sort with the -nr flags is going to sort the numeric data in reverse order, giving the IP address with the most failures at the top followed by the next highest failure and so on. \ The while loop is going to take all the fields of the COUNT and the IP and for only the failed attempts with a count higher than 10, display the count, IP, and location:
+The 3rd field from the last is an IP address, hence the (NF - 3). 
+
+
+This information is going to be piped to the [sort](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/) command to get the lines in order. 
+
+
+The sorted information is piped to the [uniq](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/) command, with the -c flag, which is going to give a count of how many times that particular line appeared. 
+
+
+The next sort with the -nr flags is going to sort the numeric data in reverse order, giving the IP address with the most failures at the top followed by the next highest failure and so on. 
+
+
+The while loop is going to take all the fields of the COUNT and the IP and for only the failed attempts with a count higher than 10, display the count, IP, and location:
 ```
 if [[ "${COUNT}" -gt 10 ]]
 then
@@ -62,7 +80,12 @@ To clean up the output a little, the 2nd field delimited by a comma:
 ```
 GeoIP Country Edition: CN
 ```
-is going to be filtered out.
+is going to be filtered out, which results in a cleaner output:
+```
+6749,182.100.67.59,China
+3379,183.3.202.111,China
+```
+
 Finally, the command will print out the number of failed attempts, the IP address, the location, and exit with a status of 0.
 ```
 echo "${COUNT},${IP},${LOCATION}"
