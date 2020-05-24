@@ -79,7 +79,7 @@ do
     S_EXIT_STATUS="${?}"
 
     # If the exit status if anything other than 0, inform the user
-    if [[ "${SSH_EXIT_STATUS}" -ne 0 ]]
+    if [[ "${S_EXIT_STATUS}" -ne 0 ]]
     then
       EXIT_STATUS="${S_EXIT_STATUS}"
       echo "Command execution on ${SERVER} failed." >&2
