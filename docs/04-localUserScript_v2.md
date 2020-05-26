@@ -1,5 +1,5 @@
 # Shell Script Goal
-This shell script is supposed to make new user accounts and accepts given parameters.
+[This shell script](../localUserCreation_v2.sh) is supposed to make new user accounts and accepts given parameters.
 # Shell Script Requirements
 * Must be executed with root privileges. If it is not, a user will not be created and it will return an exit status of 1.
 * Provides a usage statement similar to a man page if the user does not supply an account name on the command line & returns an exit status of 1.
