@@ -1,5 +1,5 @@
 # Shell Script Goal
-This shell script executes a given command on multiple servers.
+[This shell script](../execMultipleServers.sh) executes a given command on multiple servers.
 
 # Shell Script Requirements
 * Executes all arguments as a single command on every server listed in the /vagrant/servers file by default.
