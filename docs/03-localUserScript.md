@@ -1,6 +1,6 @@
 # Shell Script Goal
 
-This shell script is supposed to make new user accounts based on provided input.
+[This shell script](../localUserCreation.sh) is supposed to make new user accounts based on provided input.
 
 # Shell Script Requirments
 
