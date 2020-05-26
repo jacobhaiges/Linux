@@ -222,7 +222,7 @@ Sample output:
 0
 ```
 
-# Simple script to ping a list of servers and report their status.
+# Simple [script](../multiNetPing.sh) to ping a list of servers and report their status.
 ```
 #!/usr/bin/env bash
 
