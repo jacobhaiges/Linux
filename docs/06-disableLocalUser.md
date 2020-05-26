@@ -1,5 +1,5 @@
 # Shell Script Goal
-This shell script deletes, disables, and/or archives users on the local system.
+[This shell script](../disableLocalUser.sh) deletes, disables, and/or archives users on the local system.
 
 # Shell Script Requirements
 * Must be executed with root privileges. If it is not, a user will not be created and it will return an exit status of 1.
