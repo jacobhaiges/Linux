@@ -1,5 +1,5 @@
 # Shell Script Goal
-This shell script displays the number of failed login attempts by IP address and location.
+[This shell script](../failedLoginAttempts.sh) displays the number of failed login attempts by IP address and location.
 
 # Shell Script Requirements
 * Requires that a file is provided as an argument. If a file is not provided or cannot be read, then the script will display an error and message and exit with a status code of 1.
