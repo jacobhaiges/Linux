@@ -136,7 +136,12 @@ To use the script:
 ./localUserCreation.sh
 ```
 
-Here is some sample output:
+# Sample output
+
+```
+./localUserCreation.sh
+```
+
 ```
 Username: mjackson
 Full Name: Michael Jackson
