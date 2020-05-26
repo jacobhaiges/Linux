@@ -1,5 +1,5 @@
 # Shell Script Goal
-This shell script is supposed to make new user accounts, accept parameters, and add redirection.
+[This shell script](../localuserCreation_v3.sh) is supposed to make new user accounts, accept parameters, and add redirection.
 * Note: This script is very similar to the [localUserCreation_v2](docs/04-localUserScript_v2.md) script. The
 difference is that this script is redirecting output for less screen clutter.
 
