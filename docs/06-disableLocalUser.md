@@ -64,7 +64,7 @@ done
 ```
 This code block is using a
 ```
-[case]
+case
 ```
 [statement](https://www.shellscript.sh/case.html) to avoid going through a bunch of if/else statements. The last ? acts as a sort of "catch all" to call the usage function if an option that isn't listed is called.
 Next I'm going to remove the options specified while leaving the remaining arguments, which in this case, is going to be the username of the account.
